@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
     <button class="toggle-dark-mode" onclick="toggleDarkMode()">🌙</button>
     <div class="sidebar" id="sidebar">
@@ -21,6 +22,7 @@
         <a href="#skills" onclick="closeSidebar()">Skills</a>
         <a href="#logo-samples" onclick="closeSidebar()">Logo Samples</a>
         <a href="#contact" onclick="closeSidebar()">Contact</a> 
+        <a href="#resume" onclick="closeSidebar()">Resume</a> 
     </ul>
     </div>
    <header>
@@ -34,56 +36,57 @@
     </div>
 </header>
  <section id="about">
+  <div class="about-me">
         <h2>About </h2>
         <p>
-            Hello!
+          Hello!
         </p>
         <p> I'm  a passionate <strong> FULL STACK JAVA DEVELOPER</strong> with a knack for creating elegant and efficient software solutions. With over [ 1 year] of experience in the tech industry, I specialize in building robust applications using Java and the Spring Framework. My journey in software development has been fueled by a love for problem-solving and a commitment to delivering high-quality code.
         </p>
         <p>
             In addition to my programming skills, I have a strong interest in design, particularly in logo design. 
         </p>
+      </div>
     </section>
     <section id="skills">
     <h2>Skills</h2>
   <div class="skills">
-    <div class="skill" style="--val: 90; --clr: #facc15;">
+    <div class="skill" style="--val: 90; --clr: #69f612;">
       <div class="outer">
-        <div class="inner" id="js-percent">0%</div>
+        <div class="inner" id="java-percent">0%</div>
       </div>
       <div class="label">JAVA</div>
     </div>
 
-    <div class="skill" style="--val: 85; --clr: #60a5fa;">
+    <div class="skill" style="--val: 85; --clr: #ea471a;">
       <div class="outer">
-        <div class="inner" id="react-percent">0%</div>
+        <div class="inner" id="html-percent">0%</div>
       </div>
       <div class="label">HTML</div>
     </div>
 
-    <div class="skill" style="--val: 80; --clr: #f87171;">
+    <div class="skill" style="--val: 85; --clr: #f87171;">
       <div class="outer">
-        <div class="inner" id="java-percent">0%</div>
+        <div class="inner" id="css-percent">0%</div>
       </div>
       <div class="label">CSS</div>
     </div>
 
-    <div class="skill" style="--val: 75; --clr: #34d399;">
+    <div class="skill" style="--val: 80; --clr: #34d399;">
       <div class="outer">
-        <div class="inner" id="tailwind-percent">0%</div>
+        <div class="inner" id="js-percent">0%</div>
       </div>
-      <div class="label">JS</div>
+      <div class="label">JAVA SCRIPT</div>
     </div>
 
-    <div class="skill" style="--val: 70; --clr: #10b981;">
+    <div class="skill" style="--val: 80; --clr: #10b981;">
       <div class="outer">
-        <div class="inner" id="node-percent">0%</div>
+        <div class="inner" id="mysql-percent">0%</div>
       </div>
       <div class="label">MYSQL</div>
     </div>
   </div>
 </section>
-    
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
@@ -125,6 +128,7 @@
     </div>
     </section>
     <section id="contact">
+    <div class="container">
         <h2>Contact Me</h2>
         <form id="contactForm" class="contact-form">
             <input type="text" id="name" placeholder="Your Name" required>
@@ -133,8 +137,14 @@
             <button type="submit">Send Message</button>
         </form>
         <p id="formResponse"></p>
+  </div>
+  </section>
+  <section id="resume">
+  <div class="resume-section">
+    <a href="path/to/your/resume.pdf" download class="resume-button">Download CV <span class="download-icon">⬇️</span></a>
+      </div>
     </section>
-
+  
     <footer>
         <p>&copy; 2025 MAYANK SHARMA . All rights reserved.</p>
     </footer>

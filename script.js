@@ -9,6 +9,7 @@ function toggleSidebar() {
 function closeSidebar() {
     document.getElementById("sidebar").style.left = "-250px";
 }
+
 function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle("dark-mode");
@@ -72,11 +73,11 @@ function animateSkill(id, target) {
   }
   
   window.onload = () => {
-    animateSkill('js-percent', 90);
-    animateSkill('react-percent', 85);
-    animateSkill('java-percent', 80);
-    animateSkill('tailwind-percent', 75);
-    animateSkill('node-percent', 70);
+    animateSkill('java-percent', 90);
+    animateSkill('html-percent', 85);
+    animateSkill('css-percent', 85);
+    animateSkill('js-percent', 80);
+    animateSkill('mysql-percent', 80);
   };
   
 // Optional: Add smooth scrolling behavior

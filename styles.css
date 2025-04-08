@@ -4,6 +4,14 @@ body {
     margin: 10px;
     padding: 0;
 }
+.about-me {
+    text-align: center; /* Centers text */
+    margin: 0 auto;    /* Centers the block element, if needed */
+    display: flex;
+    justify-content: center; /* Centers inline elements */
+    align-items: center;     /* Centers vertically if desired */
+    flex-direction: column;  /* Stack elements vertically */
+}
 .sidebar {
     position: fixed;
     top: 0;
@@ -15,6 +23,7 @@ body {
     transition: 0.3s;
     padding-top: 20px;
     text-align: center;
+    z-index: 10; /* Ensure sidebar is above other content */
 }
 .sidebar ul {
     list-style-type: none;
@@ -86,6 +95,7 @@ header {
     height: 500px; /* Set a specific height */
     line-height: 50px; /* Center text vertically */
     margin: 0; /* Remove default margin */
+    width: 100%; /* Full width */;
 }
 .profile{
     display: flex;
@@ -122,21 +132,23 @@ section {
 }
 .skills {
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
    margin-bottom: 20px;
    margin-top: auto;
-    gap: 20px;
+    gap: 30px;
     height: 200px;
-    
   }
-  
   .skill {
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right:10px ;
+    align-items: center;
     position: relative;
     width: 80px;
     height: 80px;
   }
-  
-  .outer {
+.outer {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -161,7 +173,7 @@ section {
     font-weight: bold;
   }
   
-  .label {
+.label {
     margin-top: 12px;
     font-size: 1rem;
   }
@@ -171,15 +183,15 @@ section {
     margin-top: 10px;
     gap: 10px;
     margin-left: 20px;
-    margin-right: 50px;
-    background: #e18b8b;
+    margin-right: 20px;
+    background: #fff281;
 }
 .project {
     border: 1px solid #000000;
-    background: #cb4343;
+    background: #fd137c;
     padding: 10px;
     gap: 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin-left: 10px;
     margin-right: 10px;
     height: 150px;
@@ -213,8 +225,9 @@ section {
     transition: transform 0.3s;
 }
 #logo-samples {
-    max-width: 1200px;
-    margin: 50px auto;
+    max-width: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
     background: #82f1ee;
     border-radius: 8px;
@@ -228,8 +241,7 @@ section {
 .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover the entire area */
-   
+    object-fit: cover; /* Cover the entire area */ 
 }
 footer {
     text-align: center;
@@ -265,15 +277,21 @@ form button:hover {
 }
 /* Contact Form Styles */
 .contact-form {
+    
     max-width: 600px;
-   margin-left: 5px;
-    margin-right: 400px;
+    width: 700px; /* Set a width for the form */
+    margin: 0 auto; /* Center horizontally */
     padding: 20px;
     background: #f9f9f9;
     border-radius: 8px;
     border-color: #b63232;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
 /* Submit Button */
 .contact-form button {
@@ -302,4 +320,25 @@ form button:hover {
 }
 .shake {
     animation: shake 0.3s;
+}
+.resume-section {
+    
+    text-align: center;
+}
+
+.resume-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f70f0f; /* Dark background */
+        color: white; /* Text color */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px; /* Rounded corners */
+        font-family: Arial, sans-serif; /* Font family */
+}
+.resume-button:hover {
+    background-color: #232222;
+}
+.download-icon {
+    margin-left: 8px; /* Space between text and icon */
 }

@@ -45,3 +45,47 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     // Reset form
     document.getElementById("contactForm").reset();
 });
+document.querySelectorAll('.sidebar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        // Scroll to the target element smoothly
+        targetElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+function animateSkill(id, target) {
+    let current = 0;
+    const el = document.getElementById(id);
+    const interval = setInterval(() => {
+      if (current >= target) {
+        clearInterval(interval);
+      } else {
+        current++;
+        el.textContent = `${current}%`;
+      }
+    }, 20);
+  }
+  
+  window.onload = () => {
+    animateSkill('js-percent', 90);
+    animateSkill('react-percent', 85);
+    animateSkill('java-percent', 80);
+    animateSkill('tailwind-percent', 75);
+    animateSkill('node-percent', 70);
+  };
+  
+// Optional: Add smooth scrolling behavior
+const scrollContainer = document.querySelector('.scroll-container');
+
+scrollContainer.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    scrollContainer.scrollBy({
+        left: event.deltaY < 0 ? -100 : 100, // Scroll left or right
+        behavior: 'smooth' // Smooth scrolling
+    });
+});

@@ -14,13 +14,14 @@
         <div class="profile-section">
             <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         </div>
-        
+        <ul>
         
         <a href="#about" onclick="closeSidebar()">About</a>
         <a href="#projects" onclick="closeSidebar()">Projects</a>
         <a href="#skills" onclick="closeSidebar()">Skills</a>
         <a href="#logo-samples" onclick="closeSidebar()">Logo Samples</a>
         <a href="#contact" onclick="closeSidebar()">Contact</a> 
+    </ul>
     </div>
    <header>
         <div class="profile">
@@ -29,7 +30,7 @@
         <div class="profile-info">
         <h1>MAYANK SHARMA</h1>
         <p>Full Stack Java Developer | Software Engineer | Tech Enthusiast</p>
-        <nav>   
+        
     </div>
 </header>
  <section id="about">
@@ -40,22 +41,49 @@
         <p> I'm  a passionate <strong> FULL STACK JAVA DEVELOPER</strong> with a knack for creating elegant and efficient software solutions. With over [ 1 year] of experience in the tech industry, I specialize in building robust applications using Java and the Spring Framework. My journey in software development has been fueled by a love for problem-solving and a commitment to delivering high-quality code.
         </p>
         <p>
-            In addition to my programming skills, I have a strong interest in design, particularly in logo design. I believe that a well-crafted logo is not just a visual representation of a brand, but a powerful tool for communication. I enjoy merging my technical expertise with my creative side to develop visually appealing and user-friendly interfaces that enhance the overall user experience.
+            In addition to my programming skills, I have a strong interest in design, particularly in logo design. 
         </p>
-        <p>
-            When I'm not coding or designing, you can find me exploring the latest tech trends, contributing to open-source projects, or working on personal projects that challenge my skills and creativity. I'm always eager to learn and grow, and I'm excited about the opportunities that lie ahead in the world of software development and design.
-        </p>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Spring Framework</li>
-            <li>RESTful APIs</li>
-            <li>HTML/CSS/JavaScript</li>
-            <li>SQL</li>
-            <li>Git & GitHub</li>
-        </ul>
     </section>
+    <section id="skills">
+    <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill" style="--val: 90; --clr: #facc15;">
+      <div class="outer">
+        <div class="inner" id="js-percent">0%</div>
+      </div>
+      <div class="label">JAVA</div>
+    </div>
+
+    <div class="skill" style="--val: 85; --clr: #60a5fa;">
+      <div class="outer">
+        <div class="inner" id="react-percent">0%</div>
+      </div>
+      <div class="label">HTML</div>
+    </div>
+
+    <div class="skill" style="--val: 80; --clr: #f87171;">
+      <div class="outer">
+        <div class="inner" id="java-percent">0%</div>
+      </div>
+      <div class="label">CSS</div>
+    </div>
+
+    <div class="skill" style="--val: 75; --clr: #34d399;">
+      <div class="outer">
+        <div class="inner" id="tailwind-percent">0%</div>
+      </div>
+      <div class="label">JS</div>
+    </div>
+
+    <div class="skill" style="--val: 70; --clr: #10b981;">
+      <div class="outer">
+        <div class="inner" id="node-percent">0%</div>
+      </div>
+      <div class="label">MYSQL</div>
+    </div>
+  </div>
+</section>
+    
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
@@ -63,6 +91,7 @@
             <p>Description of the project, technologies used, and your role in it.</p>
             <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
         </div>
+        <br>
         <div class="project">
             <h3>Project Title 2</h3>
             <p>Description of the project, technologies used, and your role in it.</p>
@@ -73,7 +102,8 @@
     <section id="logo-samples">
         <h2>Logo Samples</h2>
         <p>Here are some of the logos I have designed for various clients and projects.</p>
-        <div class="logo-grid">
+        <div class="scroll-container">
+        
             <div class="logo-item">
                 <img src="logo1.png" alt="Logo 1">
             </div>
@@ -92,7 +122,7 @@
             <div class="logo-item">
                 <img src="logo6.png" alt="Logo 6">
             </div>
-        </div>
+    </div>
     </section>
     <section id="contact">
         <h2>Contact Me</h2>

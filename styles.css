@@ -178,22 +178,23 @@ section {
     font-size: 1rem;
   }
 #projects{
-    width: 980px;
+    width: 1000px;
     height: 500px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     gap: 10px;
     margin-left: 20px;
     margin-right: 20px;
     background: #fff281;
 }
-.project {
+.project{
     border: 1px solid #000000;
     background: #fd137c;
     padding: 10px;
     gap: 20px;
     max-width: 1000px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 150px;
 }
 .project:hover {

@@ -180,11 +180,8 @@ section {
 #projects{
     width: 1000px;
     height: 500px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto; /* Center horizontally */
     gap: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     background: #fff281;
 }
 .project{
@@ -227,12 +224,16 @@ section {
 }
 #logo-samples {
     max-width: 1000px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px auto; /* Center horizontally */
     padding: 20px;
     background: #82f1ee;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(252, 242, 242, 0.1);
+}
+#logo-samples p {
+    text-align: center; /* Center the text */
+    margin: 0 auto; /* Optional: Center the paragraph block */
+    max-width: 800px; /* Optional: Set a max width for better readability */
 }
 
 .logo-item:hover {

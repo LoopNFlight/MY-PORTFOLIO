@@ -78,6 +78,7 @@ function animateSkill(id, target) {
     animateSkill('css-percent', 85);
     animateSkill('js-percent', 80);
     animateSkill('mysql-percent', 80);
+    animateSkill('springboot-percent', 80);
   };
   
 // Optional: Add smooth scrolling behavior
